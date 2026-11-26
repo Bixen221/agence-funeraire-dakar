@@ -42,16 +42,16 @@ export function DemandeForm() {
   }
 
   return (
-    <form className="mx-auto max-w-2xl space-y-5 rounded-2xl border border-night/10 bg-white p-5 md:p-8" onSubmit={(e) => e.preventDefault()} noValidate>
+    <form className="mx-auto max-w-2xl space-y-5 rounded-2xl border border-cedre/10 bg-white p-5 md:p-8" onSubmit={(e) => e.preventDefault()} noValidate>
       <div className="grid gap-5 sm:grid-cols-2">
-        <label className="block"><span className="mb-1.5 block text-sm font-medium text-night">Votre nom *</span>
+        <label className="block"><span className="mb-1.5 block text-sm font-medium text-cedre">Votre nom *</span>
           <input name="nom" required autoComplete="name" className="field" /></label>
-        <label className="block"><span className="mb-1.5 block text-sm font-medium text-night">Votre téléphone ou WhatsApp *</span>
+        <label className="block"><span className="mb-1.5 block text-sm font-medium text-cedre">Votre téléphone ou WhatsApp *</span>
           <input name="telephone" required type="tel" inputMode="tel" autoComplete="tel" placeholder="77 000 00 00" className="field" /></label>
       </div>
-      <label className="block"><span className="mb-1.5 block text-sm font-medium text-night">Où êtes-vous ?</span>
+      <label className="block"><span className="mb-1.5 block text-sm font-medium text-cedre">Où êtes-vous ?</span>
         <input name="pays" defaultValue={etranger ? "À l'étranger : " : ""} placeholder="Dakar, Thiès, Paris…" className="field" /></label>
-      <label className="block"><span className="mb-1.5 block text-sm font-medium text-night">Où se trouve le défunt ?</span>
+      <label className="block"><span className="mb-1.5 block text-sm font-medium text-cedre">Où se trouve le défunt ?</span>
         <select name="lieu" className="field" defaultValue="">
           <option value="">Choisir</option>
           <option>À l&apos;hôpital</option>
@@ -60,13 +60,13 @@ export function DemandeForm() {
           <option>Autre</option>
         </select></label>
       <div className="grid gap-5 sm:grid-cols-2">
-        <label className="block"><span className="mb-1.5 block text-sm font-medium text-night">Communauté</span>
+        <label className="block"><span className="mb-1.5 block text-sm font-medium text-cedre">Communauté</span>
           <select name="communaute" className="field" defaultValue={communauteInit}>
             <option value="">Choisir</option>
             <option>Musulmane</option>
             <option>Chrétienne</option>
           </select></label>
-        <label className="block"><span className="mb-1.5 block text-sm font-medium text-night">Formule souhaitée</span>
+        <label className="block"><span className="mb-1.5 block text-sm font-medium text-cedre">Formule souhaitée</span>
           <select name="formule" className="field" defaultValue={formuleInit}>
             <option value="">Je ne sais pas encore</option>
             <option>Basique</option>
@@ -74,7 +74,7 @@ export function DemandeForm() {
             <option>Spécial</option>
           </select></label>
       </div>
-      <label className="block"><span className="mb-1.5 block text-sm font-medium text-night">Message</span>
+      <label className="block"><span className="mb-1.5 block text-sm font-medium text-cedre">Message</span>
         <textarea name="message" rows={4} className="field" placeholder="Toute information utile pour vous aider" /></label>
       {error && <p role="alert" className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-800">{error}</p>}
       <div className="flex flex-col gap-3 sm:flex-row">

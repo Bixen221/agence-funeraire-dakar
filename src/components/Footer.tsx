@@ -5,7 +5,7 @@ import { MailIcon, PhoneIcon, PinIcon } from "./Icons";
 
 export function Footer() {
   return (
-    <footer className="bg-night pb-32 text-white/80 md:pb-0">
+    <footer className="bg-cedre pb-32 text-white/80 md:pb-0">
       <div className="container-site grid gap-10 py-14 md:grid-cols-3">
         <div>
           <Logo light />

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: { type: "website", locale: "fr_SN", siteName: site.name },
 };
 
-export const viewport: Viewport = { themeColor: "#14233b", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#1e3b33", width: "device-width", initialScale: 1 };
 
 const jsonLd = {
   "@context": "https://schema.org",
