@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Logo provisoire : remplacer ce fichier par le logo final (même nom) -->
+  <rect width="64" height="64" rx="14" fill="#14233b"/>
+  <path d="M18 50V30a14 14 0 0 1 28 0v20" stroke="#c9a961" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 50V31a8 8 0 0 1 16 0v19" stroke="#c9a961" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+  <path d="M14 50h36" stroke="#c9a961" stroke-width="3" stroke-linecap="round"/>
+</svg>
