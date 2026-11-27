@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CallButton, WhatsAppButton } from "@/components/ContactButtons";
 import { Formules } from "@/components/Formules";
@@ -16,10 +17,13 @@ const parcours = ["Vous nous appelez", "Nous venons à l'hôpital ou au domicile
 export default function Home() {
   return (
     <>
-      <section className="bg-cedre text-white">
-        <div className="container-site grid gap-10 pt-12 md:grid-cols-[1.15fr_1fr] md:items-end md:gap-14 md:pt-20">
+      <section className="relative overflow-hidden bg-cedre text-white">
+        {/* Photo : coucher de soleil à Mbodiene (Sénégal), Jametlene Reskp, Unsplash License */}
+        <Image src="/hero-mbodiene.jpg" alt="" fill priority sizes="100vw" className="object-cover object-[50%_40%]" />
+        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-cedre/95 via-cedre/80 to-cedre/50" />
+        <div className="container-site relative grid gap-10 pt-12 md:grid-cols-[1.15fr_1fr] md:items-end md:gap-14 md:pt-20">
           <div className="md:pb-20">
-            <p className="text-[0.95rem] text-gold">Pompes funèbres à Dakar et dans tout le Sénégal</p>
+            <p className="text-[0.95rem] text-[#d6bd8c]">Pompes funèbres à Dakar et dans tout le Sénégal</p>
             <h1 className="mt-4 max-w-[16ch] font-serif text-[clamp(2.5rem,8.5vw,4.5rem)] leading-[1.02] font-semibold tracking-[-0.01em]">
               Nous nous occupons de tout, pour que vous puissiez vous recueillir.
             </h1>
