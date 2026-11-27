@@ -26,7 +26,7 @@ body { background: var(--color-pierre); color: var(--color-ink); font-family: va
   .btn-call:hover { background: var(--color-cedre-light); }
   .btn-wa { background: var(--color-wa); color: #fff; }
   .btn-wa:hover { background: #18663a; }
-  .btn-gold { background: var(--color-gold); color: var(--color-cedre-deep); }
+  .btn-gold { background: var(--color-gold); color: #ffffff; }
   .btn-gold:hover { background: #c29f68; }
   .btn-outline { border: 1.5px solid currentColor; }
   .eyebrow { font-size: .95rem; color: var(--color-bronze); font-weight: 500; }
