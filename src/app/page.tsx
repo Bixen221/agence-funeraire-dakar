@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CallButton, WhatsAppButton } from "@/components/ContactButtons";
 import { Formules } from "@/components/Formules";
+import { Parcours } from "@/components/Parcours";
 import { ClockIcon, DocIcon, GlobeIcon, HandIcon } from "@/components/Icons";
 import { faq, site } from "@/lib/site";
 
@@ -63,14 +64,7 @@ export default function Home() {
       <section className="bg-pierre-dark py-16 md:py-24">
         <div className="container-site">
                     <h2 className="h2 max-w-2xl">Un parcours clair, du premier appel à l&apos;inhumation</h2>
-          <ol className="mt-10 grid gap-4 md:grid-cols-5">
-            {parcours.map((p, i) => (
-              <li key={p} className="flex items-start gap-4 md:flex-col md:gap-3">
-                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border-2 border-gold font-serif text-xl font-semibold text-cedre">{i + 1}</span>
-                <span className="pt-2 font-medium text-cedre md:pt-0">{p}</span>
-              </li>
-            ))}
-          </ol>
+          <Parcours etapes={parcours} />
           <Link href="/demarches" className="btn btn-outline mt-10 text-cedre hover:bg-cedre hover:text-white">Voir le guide des démarches</Link>
         </div>
       </section>
