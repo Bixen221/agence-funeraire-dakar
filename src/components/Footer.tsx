@@ -17,15 +17,15 @@ export function Footer() {
           <h2 className="font-serif text-lg text-gold">Pages</h2>
           <ul className="mt-3 space-y-2 text-sm">
             {[...nav, { href: "/demande", label: "Demande de prise en charge" }].map((n) => (
-              <li key={n.href}><Link href={n.href} className="hover:text-white">{n.label}</Link></li>
+              <li key={n.href}><Link href={n.href} className="transition-colors hover:text-gold">{n.label}</Link></li>
             ))}
           </ul>
         </div>
         <div>
           <h2 className="font-serif text-lg text-gold">Nous joindre, 24 h/24</h2>
           <ul className="mt-3 space-y-3 text-sm">
-            <li><a href={site.tel} className="flex items-center gap-2 hover:text-white"><PhoneIcon className="h-4 w-4" /> {site.phoneDisplay} (tél. et WhatsApp)</a></li>
-            <li><a href={`mailto:${site.email}`} className="flex items-center gap-2 break-all hover:text-white"><MailIcon className="h-4 w-4 shrink-0" /> {site.email}</a></li>
+            <li><a href={site.tel} className="flex items-center gap-2 transition-colors hover:text-gold"><PhoneIcon className="h-4 w-4" /> {site.phoneDisplay} (tél. et WhatsApp)</a></li>
+            <li><a href={`mailto:${site.email}`} className="flex items-center gap-2 break-all transition-colors hover:text-gold"><MailIcon className="h-4 w-4 shrink-0" /> {site.email}</a></li>
             <li className="flex items-center gap-2"><PinIcon className="h-4 w-4" /> {site.address}</li>
           </ul>
         </div>

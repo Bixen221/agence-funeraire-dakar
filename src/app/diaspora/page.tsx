@@ -51,7 +51,7 @@ export default function Diaspora() {
           </div>
           <div className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
             <p className="text-sm text-white/70">Depuis l&apos;étranger, composez :</p>
-            <a href={site.tel} className="mt-1 block font-serif text-4xl font-semibold text-gold">{site.phoneIntl}</a>
+            <a href={site.tel} className="mt-1 block font-serif text-4xl font-semibold text-gold transition-colors hover:text-white">{site.phoneIntl}</a>
             <div className="mt-5 flex flex-col gap-3">
               <WhatsAppButton text="Bonjour, je vis à l'étranger et j'ai besoin d'une prise en charge funéraire au Sénégal." />
               <Link href="/demande?origine=etranger" className="btn btn-gold">Remplir une demande</Link>

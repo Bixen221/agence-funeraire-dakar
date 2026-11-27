@@ -12,7 +12,7 @@ export function Formules() {
     <div>
       <div role="tablist" aria-label="Choisir la communauté" className="mx-auto flex w-full max-w-md rounded-full border border-cedre/25 bg-white p-1">
         {([["musulmane", "Familles musulmanes"], ["chretienne", "Familles chrétiennes"]] as const).map(([k, label]) => (
-          <button key={k} role="tab" aria-selected={c === k} onClick={() => setC(k)} className={`flex-1 rounded-full px-3 py-2.5 text-sm font-semibold transition sm:text-base ${c === k ? "bg-cedre text-white" : "text-cedre/70 hover:text-cedre"}`}>
+          <button key={k} role="tab" aria-selected={c === k} onClick={() => setC(k)} className={`flex-1 rounded-full px-3 py-2.5 text-sm font-semibold transition sm:text-base ${c === k ? "bg-cedre text-white" : "text-cedre/80 hover:bg-cedre/10 hover:text-cedre"}`}>
             {label}
           </button>
         ))}

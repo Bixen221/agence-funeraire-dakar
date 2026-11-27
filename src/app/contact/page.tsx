@@ -28,7 +28,7 @@ export default function Contact() {
               <Icon className="h-6 w-6 shrink-0 text-bronze" />
               <div className="min-w-0">
                 <p className="text-sm text-ink/80">{label}</p>
-                {href ? <a href={href} className="font-medium break-words text-cedre underline-offset-4 hover:underline">{value}</a> : <p className="font-medium text-cedre">{value}</p>}
+                {href ? <a href={href} className="font-medium break-words text-cedre underline-offset-4 transition-colors hover:text-bronze hover:underline">{value}</a> : <p className="font-medium text-cedre">{value}</p>}
               </div>
             </li>
           ))}
@@ -36,7 +36,7 @@ export default function Contact() {
         <div className="rounded-2xl bg-cedre p-6 text-white md:p-8">
           <h2 className="font-serif text-3xl font-semibold">Besoin d&apos;aide maintenant ?</h2>
           <p className="mt-2 text-white/80">Appelez-nous ou écrivez-nous. Nous vous répondons en moins de 15 minutes.</p>
-          <div className="mt-6 flex flex-col gap-3"><CallButton className="!bg-gold-btn !text-white" /><WhatsAppButton /></div>
+          <div className="mt-6 flex flex-col gap-3"><CallButton className="!bg-gold-btn !text-white hover:!bg-[#7d6035]" /><WhatsAppButton /></div>
         </div>
       </section>
       <section id="faq" className="container-site scroll-mt-24 pb-16 md:pb-24">
@@ -44,7 +44,7 @@ export default function Contact() {
         <div className="mt-8 divide-y divide-cedre/15 rounded-2xl border border-cedre/20 bg-white card-shadow">
           {faq.map((f) => (
             <details key={f.q} className="group p-5">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-cedre">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-cedre transition-colors hover:text-bronze">
                 {f.q}<span className="text-2xl text-bronze transition group-open:rotate-45">+</span>
               </summary>
               <p className="mt-3 text-ink/80">{f.r}</p>

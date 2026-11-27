@@ -31,10 +31,10 @@ export function StickyContact() {
         <p className="mt-1.5 text-center text-xs text-ink/80">Joignables 24 h/24 au {site.phoneDisplay}</p>
       </div>
       <div className="fixed right-6 bottom-6 z-40 hidden flex-col gap-3 md:flex">
-        <a href={whatsappLink(msg)} target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp" className="grid h-14 w-14 place-items-center rounded-full bg-wa text-white shadow-lg transition hover:scale-105">
+        <a href={whatsappLink(msg)} target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp" className="grid h-14 w-14 place-items-center rounded-full bg-wa text-white shadow-lg transition hover:scale-105 hover:bg-[#18663a]">
           <WhatsAppIcon className="h-7 w-7" />
         </a>
-        <a href={site.tel} aria-label={`Appeler le ${site.phoneDisplay}`} className="grid h-14 w-14 place-items-center rounded-full bg-cedre text-white shadow-lg transition hover:scale-105">
+        <a href={site.tel} aria-label={`Appeler le ${site.phoneDisplay}`} className="grid h-14 w-14 place-items-center rounded-full bg-cedre text-white shadow-lg transition hover:scale-105 hover:bg-cedre-light">
           <PhoneIcon className="h-6 w-6" />
         </a>
       </div>

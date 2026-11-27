@@ -30,7 +30,7 @@ export default function Home() {
           <div className="arch relative mx-auto w-full max-w-[26rem] bg-pierre px-7 pt-16 pb-9 text-center text-ink md:px-10 md:pt-24">
             <div aria-hidden="true" className="arch pointer-events-none absolute inset-x-3 top-3 bottom-0 border-x border-t border-gold/60" />
             <p className="relative text-[0.95rem] text-ink/80">Appelez-nous, de jour comme de nuit</p>
-            <a href={site.tel} className="relative mt-2 block font-serif text-[clamp(2.6rem,11vw,3.4rem)] leading-none font-semibold whitespace-nowrap text-cedre">{site.phoneDisplay}</a>
+            <a href={site.tel} className="relative mt-2 block font-serif text-[clamp(2.6rem,11vw,3.4rem)] leading-none font-semibold whitespace-nowrap text-cedre transition-colors hover:text-bronze">{site.phoneDisplay}</a>
             <p className="relative mt-2 text-sm text-ink/80">Depuis l&apos;étranger : {site.phoneIntl}</p>
             <div className="relative mt-7 flex flex-col gap-3">
               <CallButton />
@@ -97,14 +97,14 @@ export default function Home() {
         <div className="mt-8 divide-y divide-cedre/15 rounded-2xl border border-cedre/20 bg-white card-shadow">
           {faq.slice(0, 4).map((f) => (
             <details key={f.q} className="group p-5">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-cedre">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-cedre transition-colors hover:text-bronze">
                 {f.q}<span className="text-2xl text-bronze transition group-open:rotate-45">+</span>
               </summary>
               <p className="mt-3 text-ink/80">{f.r}</p>
             </details>
           ))}
         </div>
-        <Link href="/contact#faq" className="mt-6 inline-block font-medium text-bronze underline underline-offset-4">Toutes les questions</Link>
+        <Link href="/contact#faq" className="mt-6 inline-block font-medium text-bronze underline underline-offset-4 transition-colors hover:text-cedre">Toutes les questions</Link>
       </section>
     </>
   );
