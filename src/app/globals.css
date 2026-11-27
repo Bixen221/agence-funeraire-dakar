@@ -43,7 +43,11 @@ body { background: var(--color-pierre); color: var(--color-ink); font-family: va
 .btn:focus-visible { border-radius: 9999px; }
 
 /* Cartes : se détachent nettement du fond blanc */
-.card-shadow { box-shadow: 0 1px 2px rgba(30,59,51,.06), 0 6px 18px -8px rgba(30,59,51,.18); }
+@layer components { .card-shadow { box-shadow: 0 1px 2px rgba(30,59,51,.06), 0 6px 18px -8px rgba(30,59,51,.18); } }
+
+/* Apparition des cartes de formules */
+@keyframes fade-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.anim-fade-up { animation: fade-up .6s cubic-bezier(.22,1,.36,1) backwards; }
 
 /* L'arche : motif de l'identité, réservé aux éléments forts */
 .arch { border-radius: 999px 999px 0 0; }
