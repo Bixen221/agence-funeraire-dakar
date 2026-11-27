@@ -36,7 +36,7 @@ export default function Contact() {
         <div className="rounded-2xl bg-cedre p-6 text-white md:p-8">
           <h2 className="font-serif text-3xl font-semibold">Besoin d&apos;aide maintenant ?</h2>
           <p className="mt-2 text-white/80">Appelez-nous ou écrivez-nous. Nous vous répondons en moins de 15 minutes.</p>
-          <div className="mt-6 flex flex-col gap-3"><CallButton className="!bg-gold !text-white" /><WhatsAppButton /></div>
+          <div className="mt-6 flex flex-col gap-3"><CallButton className="!bg-gold-btn !text-white" /><WhatsAppButton /></div>
         </div>
       </section>
       <section id="faq" className="container-site scroll-mt-24 pb-16 md:pb-24">

@@ -20,7 +20,7 @@ export function Formules() {
       <div className="mt-8 grid gap-5 md:grid-cols-3">
         {formules[c].map((f) => (
           <article key={f.nom} className={`relative flex flex-col rounded-2xl border bg-white p-6 card-shadow ${f.miseEnAvant ? "border-gold shadow-[0_10px_30px_-12px_rgba(20,35,59,.25)]" : "border-cedre/20"}`}>
-            {f.miseEnAvant && <span className="absolute -top-3 left-6 rounded-full bg-gold px-3 py-1 text-xs font-semibold text-white">Recommandée</span>}
+            {f.miseEnAvant && <span className="absolute -top-3 left-6 rounded-full bg-gold-btn px-3 py-1 text-xs font-semibold text-white">Recommandée</span>}
             <h3 className="font-serif text-3xl font-semibold text-cedre">{f.nom}</h3>
             <p className="mt-1 text-sm text-ink/80">{f.accroche}</p>
             <ul className="mt-5 flex-1 space-y-3 text-[0.95rem]">

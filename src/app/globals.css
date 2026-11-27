@@ -6,6 +6,7 @@
   --color-cedre-deep: #142a24;
   --color-gold: #b08d57;
   --color-bronze: #7a5e33;
+  --color-gold-btn: #8f6f3e;
   --color-pierre: #ffffff;
   --color-pierre-dark: #e6ede8;
   --color-ink: #1a1f1d;
@@ -26,8 +27,8 @@ body { background: var(--color-pierre); color: var(--color-ink); font-family: va
   .btn-call:hover { background: var(--color-cedre-light); }
   .btn-wa { background: var(--color-wa); color: #fff; }
   .btn-wa:hover { background: #18663a; }
-  .btn-gold { background: var(--color-gold); color: #ffffff; }
-  .btn-gold:hover { background: #c29f68; }
+  .btn-gold { background: var(--color-gold-btn); color: #ffffff; }
+  .btn-gold:hover { background: #7d6035; }
   .btn-outline { border: 1.5px solid currentColor; }
   .eyebrow { font-size: .95rem; color: var(--color-bronze); font-weight: 500; }
   .h1 { font-family: var(--font-serif); font-weight: 600; font-size: clamp(2.4rem, 7vw, 4rem); line-height: 1.02; letter-spacing: -.01em; color: var(--color-cedre); }
