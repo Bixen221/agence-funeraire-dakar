@@ -19,7 +19,7 @@ export default function Services() {
         <div className="rounded-2xl bg-pierre-dark p-6 md:flex md:items-center md:justify-between md:p-10">
           <div>
             <h2 className="font-serif text-3xl font-semibold text-cedre">Vous hésitez entre deux formules ?</h2>
-            <p className="mt-2 text-ink/75">Appelez-nous : nous vous conseillons sans engagement et vous donnons un devis clair.</p>
+            <p className="mt-2 text-ink/80">Appelez-nous : nous vous conseillons sans engagement et vous donnons un devis clair.</p>
           </div>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row md:mt-0"><CallButton /><WhatsAppButton /></div>
         </div>

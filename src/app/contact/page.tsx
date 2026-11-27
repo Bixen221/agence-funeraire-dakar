@@ -24,10 +24,10 @@ export default function Contact() {
       <section className="container-site grid gap-8 py-12 md:grid-cols-2 md:py-20">
         <ul className="space-y-4">
           {infos.map(({ icon: Icon, label, value, href }) => (
-            <li key={label} className="flex gap-4 rounded-2xl border border-cedre/10 bg-white p-5">
+            <li key={label} className="flex gap-4 rounded-2xl border border-cedre/20 bg-white card-shadow p-5">
               <Icon className="h-6 w-6 shrink-0 text-bronze" />
               <div className="min-w-0">
-                <p className="text-sm text-ink/60">{label}</p>
+                <p className="text-sm text-ink/80">{label}</p>
                 {href ? <a href={href} className="font-medium break-words text-cedre underline-offset-4 hover:underline">{value}</a> : <p className="font-medium text-cedre">{value}</p>}
               </div>
             </li>
@@ -41,13 +41,13 @@ export default function Contact() {
       </section>
       <section id="faq" className="container-site scroll-mt-24 pb-16 md:pb-24">
         <h2 className="h2">Questions fréquentes</h2>
-        <div className="mt-8 divide-y divide-cedre/10 rounded-2xl border border-cedre/10 bg-white">
+        <div className="mt-8 divide-y divide-cedre/15 rounded-2xl border border-cedre/20 bg-white card-shadow">
           {faq.map((f) => (
             <details key={f.q} className="group p-5">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-cedre">
                 {f.q}<span className="text-2xl text-bronze transition group-open:rotate-45">+</span>
               </summary>
-              <p className="mt-3 text-ink/75">{f.r}</p>
+              <p className="mt-3 text-ink/80">{f.r}</p>
             </details>
           ))}
         </div>

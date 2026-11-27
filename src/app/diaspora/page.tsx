@@ -33,10 +33,10 @@ export default function Diaspora() {
       <section className="container-site py-12 md:py-20">
         <ol className="grid gap-5 md:grid-cols-2">
           {etapes.map((e, i) => (
-            <li key={e.t} className="rounded-2xl border border-cedre/10 bg-white p-6">
+            <li key={e.t} className="rounded-2xl border border-cedre/20 bg-white card-shadow p-6">
               <span className="font-serif text-4xl font-semibold text-bronze">{i + 1}</span>
               <h2 className="mt-2 text-lg font-semibold text-cedre">{e.t}</h2>
-              <p className="mt-1 text-ink/75">{e.d}</p>
+              <p className="mt-1 text-ink/80">{e.d}</p>
             </li>
           ))}
         </ol>

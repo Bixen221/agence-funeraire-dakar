@@ -42,7 +42,7 @@ export function DemandeForm() {
   }
 
   return (
-    <form className="mx-auto max-w-2xl space-y-5 rounded-2xl border border-cedre/10 bg-white p-5 md:p-8" onSubmit={(e) => e.preventDefault()} noValidate>
+    <form className="mx-auto max-w-2xl space-y-5 rounded-2xl border border-cedre/20 bg-white card-shadow p-5 md:p-8" onSubmit={(e) => e.preventDefault()} noValidate>
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="block"><span className="mb-1.5 block text-sm font-medium text-cedre">Votre nom *</span>
           <input name="nom" required autoComplete="name" className="field" /></label>
@@ -81,7 +81,7 @@ export function DemandeForm() {
         <button type="button" onClick={(e) => send("whatsapp", e)} className="btn btn-wa flex-1"><WhatsAppIcon /> Envoyer par WhatsApp</button>
         <button type="button" onClick={(e) => send("email", e)} className="btn btn-call flex-1"><MailIcon /> Envoyer par e-mail</button>
       </div>
-      <p className="text-xs text-ink/60">Vos informations servent uniquement à vous recontacter. Elles ne sont pas enregistrées sur ce site.</p>
+      <p className="text-xs text-ink/80">Vos informations servent uniquement à vous recontacter. Elles ne sont pas enregistrées sur ce site.</p>
     </form>
   );
 }

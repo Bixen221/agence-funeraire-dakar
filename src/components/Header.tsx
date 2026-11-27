@@ -10,7 +10,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const path = usePathname();
   return (
-    <header className="sticky top-0 z-50 border-b border-cedre/10 bg-pierre/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-cedre/20 bg-pierre/95 backdrop-blur">
       <div className="container-site flex h-16 items-center justify-between gap-4 md:h-20">
         <Logo />
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
@@ -22,7 +22,7 @@ export function Header() {
           <Link href="/demande" className="btn btn-gold !py-2.5 text-sm">Demander une prise en charge</Link>
         </nav>
         <div className="flex items-center gap-2 lg:hidden">
-          <a href={site.tel} className="flex items-center gap-1.5 whitespace-nowrap rounded-full border border-cedre/15 px-3 py-2 text-sm font-medium text-cedre">
+          <a href={site.tel} className="flex items-center gap-1.5 whitespace-nowrap rounded-full border border-cedre/25 px-3 py-2 text-sm font-medium text-cedre">
             <PhoneIcon className="h-4 w-4" /> <span className="hidden sm:inline">{site.phoneDisplay}</span><span className="sm:hidden">24 h/24</span>
           </a>
           <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="menu-mobile" aria-label={open ? "Fermer le menu" : "Ouvrir le menu"} className="grid h-10 w-10 place-items-center rounded-full text-cedre">
@@ -33,7 +33,7 @@ export function Header() {
         </div>
       </div>
       {open && (
-        <nav id="menu-mobile" className="border-t border-cedre/10 bg-pierre lg:hidden" aria-label="Navigation mobile">
+        <nav id="menu-mobile" className="border-t border-cedre/20 bg-pierre lg:hidden" aria-label="Navigation mobile">
           <ul className="container-site flex flex-col py-2">
             {[...nav, { href: "/demande", label: "Demander une prise en charge" }].map((n) => (
               <li key={n.href}>

@@ -19,7 +19,7 @@ export default function Demarches() {
       <section className="container-site py-12 md:py-20">
         <div className="mb-10 rounded-2xl border border-gold/50 bg-white p-5 md:p-6">
           <p className="font-serif text-2xl font-semibold text-cedre">La première chose à faire : nous appeler.</p>
-          <p className="mt-1 text-ink/75">Nous vous disons quoi faire immédiatement et nous nous déplaçons, 24 h/24.</p>
+          <p className="mt-1 text-ink/80">Nous vous disons quoi faire immédiatement et nous nous déplaçons, 24 h/24.</p>
           <div className="mt-4 flex flex-col gap-3 sm:flex-row"><CallButton /><WhatsAppButton /></div>
         </div>
         <div className="space-y-14">
@@ -33,11 +33,11 @@ export default function Demarches() {
                     <li key={e.titre} className="relative pb-8 pl-10 last:pb-0">
                       <span className="absolute -left-[1.1rem] top-0 grid h-9 w-9 place-items-center rounded-full bg-cedre font-serif text-lg font-semibold text-gold">{n}</span>
                       <h3 className="pt-1 text-lg font-semibold text-cedre">{e.titre}</h3>
-                      <p className="mt-1 max-w-2xl text-ink/75">{e.texte}</p>
+                      <p className="mt-1 max-w-2xl text-ink/80">{e.texte}</p>
                       {(e.musulman || e.chretien) && (
                         <dl className="mt-3 grid max-w-xl gap-2 text-sm sm:grid-cols-2">
-                          <div className="rounded-lg bg-pierre-dark px-3 py-2"><dt className="font-semibold text-cedre">Familles musulmanes</dt><dd className="text-ink/75">{e.musulman}</dd></div>
-                          <div className="rounded-lg bg-pierre-dark px-3 py-2"><dt className="font-semibold text-cedre">Familles chrétiennes</dt><dd className="text-ink/75">{e.chretien}</dd></div>
+                          <div className="rounded-lg bg-pierre-dark px-3 py-2"><dt className="font-semibold text-cedre">Familles musulmanes</dt><dd className="text-ink/80">{e.musulman}</dd></div>
+                          <div className="rounded-lg bg-pierre-dark px-3 py-2"><dt className="font-semibold text-cedre">Familles chrétiennes</dt><dd className="text-ink/80">{e.chretien}</dd></div>
                         </dl>
                       )}
                     </li>

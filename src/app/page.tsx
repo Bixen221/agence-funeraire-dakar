@@ -29,14 +29,14 @@ export default function Home() {
           </div>
           <div className="arch relative mx-auto w-full max-w-[26rem] bg-pierre px-7 pt-16 pb-9 text-center text-ink md:px-10 md:pt-24">
             <div aria-hidden="true" className="arch pointer-events-none absolute inset-x-3 top-3 bottom-0 border-x border-t border-gold/60" />
-            <p className="relative text-[0.95rem] text-ink/70">Appelez-nous, de jour comme de nuit</p>
+            <p className="relative text-[0.95rem] text-ink/80">Appelez-nous, de jour comme de nuit</p>
             <a href={site.tel} className="relative mt-2 block font-serif text-[clamp(2.6rem,11vw,3.4rem)] leading-none font-semibold whitespace-nowrap text-cedre">{site.phoneDisplay}</a>
-            <p className="relative mt-2 text-sm text-ink/60">Depuis l&apos;étranger : {site.phoneIntl}</p>
+            <p className="relative mt-2 text-sm text-ink/80">Depuis l&apos;étranger : {site.phoneIntl}</p>
             <div className="relative mt-7 flex flex-col gap-3">
               <CallButton />
               <WhatsAppButton />
             </div>
-            <p className="relative mt-5 text-sm text-ink/70">Réponse en moins de 15 minutes, 7 jours sur 7.</p>
+            <p className="relative mt-5 text-sm text-ink/80">Réponse en moins de 15 minutes, 7 jours sur 7.</p>
           </div>
         </div>
       </section>
@@ -45,11 +45,11 @@ export default function Home() {
         <h2 className="h2 max-w-[20ch]">Une seule équipe, du premier appel au dernier hommage</h2>
         <div className="mt-10 grid gap-x-12 gap-y-8 sm:grid-cols-2">
           {engagements.map(({ icon: Icon, titre, texte }) => (
-            <div key={titre} className="flex gap-4 border-t border-cedre/15 pt-6">
+            <div key={titre} className="flex gap-4 border-t border-cedre/25 pt-6">
               <Icon className="mt-1 h-6 w-6 shrink-0 text-bronze" />
               <div>
                 <h3 className="font-serif text-2xl font-semibold text-cedre">{titre}</h3>
-                <p className="mt-1.5 max-w-[48ch] leading-relaxed text-ink/75">{texte}</p>
+                <p className="mt-1.5 max-w-[48ch] leading-relaxed text-ink/80">{texte}</p>
               </div>
             </div>
           ))}
@@ -94,13 +94,13 @@ export default function Home() {
 
       <section className="container-site py-16 md:py-24">
                 <h2 className="h2">Vous vous posez des questions</h2>
-        <div className="mt-8 divide-y divide-cedre/10 rounded-2xl border border-cedre/10 bg-white">
+        <div className="mt-8 divide-y divide-cedre/15 rounded-2xl border border-cedre/20 bg-white card-shadow">
           {faq.slice(0, 4).map((f) => (
             <details key={f.q} className="group p-5">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-cedre">
                 {f.q}<span className="text-2xl text-bronze transition group-open:rotate-45">+</span>
               </summary>
-              <p className="mt-3 text-ink/75">{f.r}</p>
+              <p className="mt-3 text-ink/80">{f.r}</p>
             </details>
           ))}
         </div>
