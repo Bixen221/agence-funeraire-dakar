@@ -29,68 +29,51 @@ export type Formule = {
   accroche: string;
   inclus: string[];
   prix: string;
+  option?: string;
   miseEnAvant?: boolean;
 };
 
-const basique = [
-  "Démarches administratives (certificat de décès, état civil, permis d'inhumer, autorisation de transport)",
-  "Lavage mortuaire",
-  "Corbillard vers le cimetière",
-];
+const demarches = "Démarches administratives (certificat de décès, état civil, permis d'inhumer, autorisation de transport)";
+const optionBus = "Bus pour les proches : +50\u202f000 FCFA par bus";
+
+const basiqueMusulmane = [demarches, "Lavage mortuaire", "Corbillard vers le cimetière", "Prière mortuaire", "Inhumation au cimetière"];
+const basiqueChretienne = [demarches, "Veillée de prière", "Préparation du corps", "Cercueil fourni", "Corbillard vers le cimetière", "Réservation du caveau"];
 
 export const formules: Record<"musulmane" | "chretienne", Formule[]> = {
   musulmane: [
-    { nom: "Basique", accroche: "L'essentiel, pris en charge avec soin.", inclus: basique, prix: "100 000 FCFA" },
+    { nom: "Basique", accroche: "L'essentiel, pris en charge avec soin.", inclus: basiqueMusulmane, prix: "100\u202f000 FCFA" },
     {
       nom: "Premium",
-      accroche: "Une organisation complète, sans souci pour la famille.",
-      inclus: [
-        "Tout le contenu de la formule Basique",
-        "Conservation à la morgue",
-        "Organisation de la prière mortuaire",
-        "Réservation de la parcelle au cimetière",
-      ],
-      prix: "200 000 FCFA",
+      accroche: "L'essentiel, avec une tombe ornée.",
+      inclus: ["Tout le contenu de la formule Basique", "Ornement de la tombe"],
+      option: optionBus,
+      prix: "200\u202f000 FCFA",
       miseEnAvant: true,
     },
     {
       nom: "Spécial",
-      accroche: "Un accompagnement dédié, du premier appel au dernier hommage.",
-      inclus: [
-        "Tout le contenu de la formule Premium",
-        "Ornement de la tombe",
-        "Coordination complète pour la famille à l'étranger",
-        "Un interlocuteur dédié tout au long de la prise en charge",
-      ],
-      prix: "350 000 FCFA",
+      accroche: "Tout est prévu, jusqu'à l'accueil des visiteurs.",
+      inclus: ["Tout le contenu de la formule Premium", "Bâche et traiteur pour accueillir les visiteurs"],
+      option: optionBus,
+      prix: "350\u202f000 FCFA",
     },
   ],
   chretienne: [
-    { nom: "Basique", accroche: "L'essentiel, pris en charge avec soin.", inclus: basique, prix: "500 000 FCFA" },
+    { nom: "Basique", accroche: "L'essentiel, pris en charge avec soin.", inclus: basiqueChretienne, prix: "500\u202f000 FCFA" },
     {
       nom: "Premium",
-      accroche: "Une organisation complète, sans souci pour la famille.",
-      inclus: [
-        "Tout le contenu de la formule Basique",
-        "Conservation à la morgue",
-        "Organisation de la prière ou de la veillée de prière",
-        "Réservation de la parcelle au cimetière",
-        "Cercueil standard",
-      ],
-      prix: "650 000 FCFA",
+      accroche: "L'essentiel, avec un caveau orné.",
+      inclus: ["Tout le contenu de la formule Basique", "Ornement du caveau"],
+      option: optionBus,
+      prix: "650\u202f000 FCFA",
       miseEnAvant: true,
     },
     {
       nom: "Spécial",
-      accroche: "Un accompagnement dédié, du premier appel au dernier hommage.",
-      inclus: [
-        "Tout le contenu de la formule Premium",
-        "Cercueil haut de gamme",
-        "Ornement de la tombe",
-        "Coordination complète pour la famille à l'étranger",
-        "Un interlocuteur dédié tout au long de la prise en charge",
-      ],
-      prix: "1 000 000 FCFA",
+      accroche: "Tout est prévu, jusqu'à l'accueil des visiteurs.",
+      inclus: ["Tout le contenu de la formule Premium", "Bâche et traiteur pour accueillir les visiteurs"],
+      option: optionBus,
+      prix: "1\u202f000\u202f000 FCFA",
     },
   ],
 };
@@ -194,7 +177,7 @@ export const faq = [
   },
   {
     q: "Combien coûte une prise en charge ?",
-    r: "Nos formules commencent à 100 000 FCFA pour les familles musulmanes et à 500 000 FCFA pour les familles chrétiennes. Nous confirmons le prix avec vous dès votre appel, avant tout engagement.",
+    r: "Nos formules commencent à 100 000 FCFA pour les familles musulmanes et à 500 000 FCFA pour les familles chrétiennes. Avec les formules Premium et Spécial, vous pouvez ajouter des bus pour les proches, à 50\u202f000 FCFA par bus. Nous confirmons le prix avec vous dès votre appel, avant tout engagement.",
   },
   {
     q: "Je vis à l'étranger. Pouvez-vous tout gérer pour ma famille ?",

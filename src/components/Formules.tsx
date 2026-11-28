@@ -54,6 +54,12 @@ export function Formules() {
                 <li key={item} className="flex gap-2.5"><CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-bronze transition-transform duration-300 group-hover:scale-110" /> <span>{item}</span></li>
               ))}
             </ul>
+            {f.option && (
+              <p className="mt-5 rounded-xl border border-dashed border-gold bg-pierre-dark/50 px-4 py-3 text-sm text-ink">
+                <span className="block text-xs font-semibold tracking-wide text-bronze uppercase">En option</span>
+                {f.option}
+              </p>
+            )}
             <p className="mt-6 border-t border-cedre/20 pt-4 font-serif text-3xl font-semibold whitespace-nowrap text-cedre [font-variant-numeric:lining-nums_tabular-nums]">{f.prix}</p>
             <Link href={`/demande?formule=${encodeURIComponent(f.nom)}&communaute=${c}`} className={`btn mt-4 w-full ${f.miseEnAvant ? "btn-call" : "btn-outline text-cedre hover:bg-cedre hover:text-white"}`}>
               Demander un devis
@@ -61,7 +67,7 @@ export function Formules() {
           </article>
         ))}
       </div>
-      <p className="mt-6 text-center text-sm text-ink/80">Prix de base en francs CFA. Chaque formule s&apos;adapte aux souhaits de la famille : nous confirmons le prix avec vous dès votre appel.</p>
+      <p className="mt-6 text-center text-sm text-ink/80">Prix en francs CFA, hors options. Nous confirmons le prix avec vous dès votre appel.</p>
     </div>
   );
 }
