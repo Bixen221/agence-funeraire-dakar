@@ -137,9 +137,9 @@ export const etapes: { phase: string; items: Etape[] }[] = [
       },
       {
         titre: "Cercueil",
-        texte: "Pour les familles chrétiennes, nous vous aidons à choisir et à acheter le cercueil.",
+        texte: "Pour les familles chrétiennes, le cercueil est fourni dans toutes nos formules.",
         musulman: "Non concerné",
-        chretien: "Choix et achat du cercueil",
+        chretien: "Cercueil fourni",
       },
     ],
   },
@@ -151,8 +151,10 @@ export const etapes: { phase: string; items: Etape[] }[] = [
         texte: "Nous fixons la date avec la famille et les autorités du cimetière.",
       },
       {
-        titre: "Parcelle au cimetière",
-        texte: "Nous réservons la parcelle au cimetière choisi.",
+        titre: "Place au cimetière",
+        texte: "Nous réservons l'emplacement au cimetière choisi.",
+        musulman: "Parcelle au cimetière",
+        chretien: "Réservation du caveau",
       },
       {
         titre: "Corbillard vers le cimetière",
@@ -160,7 +162,7 @@ export const etapes: { phase: string; items: Etape[] }[] = [
       },
       {
         titre: "Ornement de la tombe",
-        texte: "Après l'inhumation, nous pouvons prendre en charge l'ornement de la tombe.",
+        texte: "Avec les formules Premium et Spécial, nous prenons en charge l'ornement de la tombe ou du caveau.",
       },
     ],
   },
