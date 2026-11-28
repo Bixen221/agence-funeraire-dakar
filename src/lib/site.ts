@@ -40,7 +40,7 @@ const basique = [
 
 export const formules: Record<"musulmane" | "chretienne", Formule[]> = {
   musulmane: [
-    { nom: "Basique", accroche: "L'essentiel, pris en charge avec soin.", inclus: basique, prix: "Sur devis" },
+    { nom: "Basique", accroche: "L'essentiel, pris en charge avec soin.", inclus: basique, prix: "100 000 FCFA" },
     {
       nom: "Premium",
       accroche: "Une organisation complète, sans souci pour la famille.",
@@ -50,7 +50,7 @@ export const formules: Record<"musulmane" | "chretienne", Formule[]> = {
         "Organisation de la prière mortuaire",
         "Réservation de la parcelle au cimetière",
       ],
-      prix: "Sur devis",
+      prix: "200 000 FCFA",
       miseEnAvant: true,
     },
     {
@@ -62,11 +62,11 @@ export const formules: Record<"musulmane" | "chretienne", Formule[]> = {
         "Coordination complète pour la famille à l'étranger",
         "Un interlocuteur dédié tout au long de la prise en charge",
       ],
-      prix: "Sur devis",
+      prix: "350 000 FCFA",
     },
   ],
   chretienne: [
-    { nom: "Basique", accroche: "L'essentiel, pris en charge avec soin.", inclus: basique, prix: "Sur devis" },
+    { nom: "Basique", accroche: "L'essentiel, pris en charge avec soin.", inclus: basique, prix: "500 000 FCFA" },
     {
       nom: "Premium",
       accroche: "Une organisation complète, sans souci pour la famille.",
@@ -77,7 +77,7 @@ export const formules: Record<"musulmane" | "chretienne", Formule[]> = {
         "Réservation de la parcelle au cimetière",
         "Cercueil standard",
       ],
-      prix: "Sur devis",
+      prix: "650 000 FCFA",
       miseEnAvant: true,
     },
     {
@@ -90,7 +90,7 @@ export const formules: Record<"musulmane" | "chretienne", Formule[]> = {
         "Coordination complète pour la famille à l'étranger",
         "Un interlocuteur dédié tout au long de la prise en charge",
       ],
-      prix: "Sur devis",
+      prix: "1 000 000 FCFA",
     },
   ],
 };
@@ -194,7 +194,7 @@ export const faq = [
   },
   {
     q: "Combien coûte une prise en charge ?",
-    r: "Chaque situation est différente. Nous établissons un devis clair et gratuit dès votre appel, avant tout engagement.",
+    r: "Nos formules commencent à 100 000 FCFA pour les familles musulmanes et à 500 000 FCFA pour les familles chrétiennes. Nous confirmons le prix avec vous dès votre appel, avant tout engagement.",
   },
   {
     q: "Je vis à l'étranger. Pouvez-vous tout gérer pour ma famille ?",
