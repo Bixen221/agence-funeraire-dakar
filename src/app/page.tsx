@@ -25,7 +25,7 @@ export default function Home() {
         <div className="container-site relative grid gap-10 pt-12 md:grid-cols-[1.15fr_1fr] md:items-end md:gap-14 md:pt-20">
           <div className="md:pb-20">
             <p className="text-[0.95rem] text-[#d6bd8c]">Pompes funèbres à Dakar et dans tout le Sénégal</p>
-            <h1 className="mt-4 max-w-[16ch] font-serif text-[clamp(2.5rem,8.5vw,4.5rem)] leading-[1.02] font-semibold tracking-[-0.01em]">
+            <h1 className="mt-4 max-w-[18ch] font-serif text-[clamp(2.15rem,7.2vw,3.9rem)] leading-[1.08] font-semibold tracking-[-0.015em]">
               Nous nous occupons de tout, pour que vous puissiez vous recueillir.
             </h1>
             <p className="mt-6 max-w-[52ch] text-lg leading-relaxed text-white/80">
