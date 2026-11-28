@@ -11,7 +11,7 @@ export function Header() {
   const path = usePathname();
   return (
     <header className="sticky top-0 z-50 border-b border-cedre/20 bg-pierre/95 backdrop-blur">
-      <div className="container-site flex h-16 items-center justify-between gap-4 md:h-20">
+      <div className="container-site flex h-16 items-center justify-between gap-3 md:h-20">
         <Logo />
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
           {nav.map((n) => (
@@ -22,8 +22,8 @@ export function Header() {
           <Link href="/demande" className="btn btn-gold !py-2.5 text-sm">Demander une prise en charge</Link>
         </nav>
         <div className="flex items-center gap-2 lg:hidden">
-          <a href={site.tel} className="flex items-center gap-1.5 whitespace-nowrap rounded-full border border-cedre/25 px-3 py-2 text-sm font-medium text-cedre transition-colors hover:border-cedre hover:bg-cedre hover:text-white">
-            <PhoneIcon className="h-4 w-4" /> <span className="hidden sm:inline">{site.phoneDisplay}</span><span className="sm:hidden">24 h/24</span>
+          <a href={site.tel} aria-label={`Appeler le ${site.phoneDisplay}, 24 h/24`} className="flex items-center gap-1.5 whitespace-nowrap rounded-full border border-cedre/25 px-3 py-2 max-[379px]:h-10 max-[379px]:w-10 max-[379px]:justify-center max-[379px]:px-0 text-sm font-medium text-cedre transition-colors hover:border-cedre hover:bg-cedre hover:text-white">
+            <PhoneIcon className="h-4 w-4" /> <span className="hidden sm:inline">{site.phoneDisplay}</span><span className="max-[379px]:hidden sm:hidden">24 h/24</span>
           </a>
           <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="menu-mobile" aria-label={open ? "Fermer le menu" : "Ouvrir le menu"} className="grid h-10 w-10 place-items-center rounded-full text-cedre transition-colors hover:bg-cedre hover:text-white">
             <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">

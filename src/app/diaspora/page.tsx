@@ -21,7 +21,7 @@ const avantages = [
   "Un interlocuteur unique qui parle avec vous et avec la famille sur place",
   "Toutes les démarches administratives faites pour vous",
   "Paiement et documents organisés avec vous à distance",
-  "Coordination complète incluse dans la formule Spécial",
+  "Le prix confirmé avec vous avant tout engagement",
 ];
 
 export default function Diaspora() {
@@ -85,7 +85,7 @@ export default function Diaspora() {
           </div>
           <div className="rounded-2xl border border-cedre/20 bg-white p-6 card-shadow">
             <p className="text-sm text-ink/80">Depuis l&apos;étranger, composez :</p>
-            <a href={site.tel} className="mt-1 block font-serif text-[clamp(2rem,7vw,2.6rem)] leading-tight font-bold whitespace-nowrap text-[#1f4e8c] transition-colors hover:text-cedre">{site.phoneIntl}</a>
+            <a href={site.tel} className="mt-1 block font-serif text-[clamp(1.6rem,7.5vw,2.6rem)] leading-tight font-bold whitespace-nowrap text-[#1f4e8c] transition-colors hover:text-cedre">{site.phoneIntl}</a>
             <div className="mt-5 flex flex-col gap-3">
               <WhatsAppButton text="Bonjour, je vis à l'étranger et j'ai besoin d'une prise en charge funéraire au Sénégal." />
               <Link href="/demande?origine=etranger" className="btn btn-gold">Remplir une demande</Link>

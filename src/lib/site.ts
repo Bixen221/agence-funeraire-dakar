@@ -34,7 +34,7 @@ export type Formule = {
 };
 
 const demarches = "Démarches administratives (certificat de décès, état civil, permis d'inhumer, autorisation de transport)";
-const optionBus = "Bus pour les proches : +50\u202f000 FCFA par bus";
+const optionBus = "Bus pour les proches : +50\u202f000\u00a0FCFA par bus";
 
 const basiqueMusulmane = [demarches, "Lavage mortuaire", "Corbillard vers le cimetière", "Prière mortuaire", "Inhumation au cimetière"];
 const basiqueChretienne = [demarches, "Veillée de prière", "Préparation du corps", "Cercueil fourni", "Corbillard vers le cimetière", "Réservation du caveau"];
